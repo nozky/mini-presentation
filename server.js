@@ -12,7 +12,7 @@ gpio.setup(8,gpio.DIR_HIGH)
 
 app.get('/on',(req,res)=>{
   gpio.write(8,false,(err)=>{
-    return res.send(err)
+     console.log(err)
   })
   console.log('Turning on')
   res.send('Turning on...')
@@ -20,9 +20,9 @@ app.get('/on',(req,res)=>{
 
 app.get('/off',(req,res)=>{
   gpio.write(8,true,(err)=>{
-    return res.send(err)
+     console.log(err)
   })
-  
+
   console.log('Turning off')
   res.send('Turning off...')
 })
