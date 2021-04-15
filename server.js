@@ -10,6 +10,7 @@ app.use(express.static(path.join(__dirname, '/public')))
 // init gpio
 gpio.setup(8,gpio.DIR_HIGH)
 
+// turn on
 app.get('/on',(req,res)=>{
   gpio.write(8,false,(err)=>{
     if (err){ console.log(err) }
@@ -18,6 +19,7 @@ app.get('/on',(req,res)=>{
   res.send('Turning on...')
 })
 
+// turn off
 app.get('/off',(req,res)=>{
   gpio.write(8,true,(err)=>{
     if (err){ console.log(err) }
