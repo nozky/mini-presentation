@@ -4,7 +4,7 @@ const btnOff = document.querySelector('.btn-off');
 const btnOn = document.querySelector('.btn-on');
 
 btnOff.addEventListener('click',()=>{
-  fetch('/on')
+  fetch('/off')
     .then(res => res.text())
     .then( data => console.log(data))
     .catch( err => console.log( err))
@@ -12,7 +12,7 @@ btnOff.addEventListener('click',()=>{
 
 
 btnOn.addEventListener('click',()=>{
-  fetch('/off')
+  fetch('/on')
   .then(res => res.text())
   .then( data => console.log(data))
   .catch( err => console.log( err))
