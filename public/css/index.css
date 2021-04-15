@@ -79,6 +79,11 @@ li{
   margin: 1rem;
 }
 
+.onoff .btn{
+  padding: 1rem 1.5rem;
+  font-size: larger;
+}
+
 footer{
   width: 100%;
   display: flex;
