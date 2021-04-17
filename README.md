@@ -26,7 +26,6 @@
 2.) Install rpi-gpio - this handle the raspberry pi gpio (pins).
 - When user send request on any endpoint I specify above, and when the server recieve the request, it will trigger any pin you use for communication on raspberry pi using rpi-gpio library, it will make the pin energize (applying voltage (3v)) and by doing that will trigger the relay making a circuit close or open.  
 
-my mini presentation source code - [https://github.com/nozky/mini-presentation](https://github.com/nozky/mini-presentation)
 
 Example/Guide how to setup the reapberry pi - [https://www.geekytidbits.com/open-garage-doors-raspberry-pi/](https://www.geekytidbits.com/open-garage-doors-raspberry-pi/) 
 
