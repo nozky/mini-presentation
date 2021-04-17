@@ -7,7 +7,7 @@ const gpio = require('rpi-gpio')
 app.use(cors())
 app.use(express.static(path.join(__dirname, '/public')))
 
-// init gpio
+// init gpio, using pin 8 for commonication
 gpio.setup(8,gpio.DIR_HIGH)
 
 // turn on
